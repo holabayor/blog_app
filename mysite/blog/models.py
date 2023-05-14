@@ -32,7 +32,7 @@ class Post(models.Model):
     slug = models.SlugField(max_length=250, unique_for_date='publish')
 
     class Meta:
-        ordering = ['publish']
+        ordering = ['-publish']
         indexes = [models.Index(fields=['-publish']),]
 
     def __str__(self):
