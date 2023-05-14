@@ -3,3 +3,5 @@ my_env/
 *.pyc
 
 *.sqlite3
+.vscode/settings.json
+mysite/blog/migrations/
