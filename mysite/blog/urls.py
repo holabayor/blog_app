@@ -15,5 +15,5 @@ urlpatterns = [
          views.post_comment, name='post_comment'),
     path('tag/<slug:tag_slug>',
          views.post_list, name='post_list_by_tag'),
-    path('feed/' LatestPostsFeed(), name='post_feed'),
+    path('feed/', LatestPostsFeed(), name='post_feed')
 ]
